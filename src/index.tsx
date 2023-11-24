@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App'; // App.jsからApp関数を取り込んでいる
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
+  // index.htmlにあるrootをidにもつ要素を指定している
   document.getElementById('root') as HTMLElement
 );
 root.render(
+  // 描画するJSXタグを指定している
   <React.StrictMode>
-    <App />
+    {/* Appはsrc/App.tsxからインポートしたものを使用している */}
+    <App /> 
   </React.StrictMode>
 );
 
