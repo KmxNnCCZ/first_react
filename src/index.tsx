@@ -10,9 +10,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   // 描画するJSXタグを指定している
-  <React.StrictMode>
+  <React.StrictMode>/
+    
     {/* Appはsrc/App.tsxからインポートしたものを使用している */}
-    <App /> 
+    <App />
   </React.StrictMode>
 );
 
